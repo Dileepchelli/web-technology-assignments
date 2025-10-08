@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <form action="https://parivahan.gov.in/" method="post">
+             <h2>Driving License Application Form</h2>
+        <table style="border-collapse: collapse; border: 4px solid black;">
+            <tr>
+                <td style="border: 2px solid black;"> Full Name </td>
+                <td style="border: 2px solid black;"><input type="text" placeholder="enter your name " minlength="3" maxlength="15" required></td>
+            </tr>
+          <tr>
+              <td style="border: 2px solid black;">Father's Name</td>
+              <td style="border: 2px solid black;"><input type="text" placeholder="enter your Father name " minlength="3" maxlength="15" required></td>
+           </tr>
+          <tr>
+              <td style="border: 2px solid black;">Date of Birth</td>
+              <td style="border: 2px solid black;"> <input type="date" min="1960-01-01" max="2025-01-01" required></td>
+          </tr>
+           <tr>
+               <td style="border: 2px solid black;">Age</td>
+               <td style="border: 2px solid black;"><input type="number" min="18" max="60" placeholder="enter your age" required></td>
+           </tr>
+          <tr>
+                 <td style="border: 2px solid black;" >Gender </td>
+                  <td style="border: 2px solid black;" required>
+                      Male<input type="radio" >
+                      Female<input type="radio" >
+                      Others<input type="radio" >
+                  </td>
+          </tr>
+          <tr>
+              <td style="border: 2px solid black;">Adhar Number</td>
+              <td style="border: 2px solid black;"><input type="text" pattern="[0-9]{12}" placeholder="enter your adhra number" required></td>
+          </tr>
+           <tr>
+               <td style="border: 2px solid black;">PAN Number</td>
+               <td><input type="text" placeholder="enter your pan number" maxlength="10" minlength="10" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" required></td>
+               
+           </tr>
+           <tr>
+               <td style="border: 2px solid black;">Email</td>
+               <td style="border: 2px solid black;"><input type="email" placeholder="entere your email" required ></td>
+           </tr>
+            <tr>
+                <td style="border: 2px solid black;">Mobile Number</td>
+                <td style="border: 2px solid black;"><input type="tel" pattern="[0-9]{10}" placeholder="enter number only"  required></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black;">Permanent Address</td>
+                <td style="border: 2px solid black;"><textarea  placeholder="enter your Address" required></textarea></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td style="border: 2px solid black;"><select name="select state" required>
+                    <option value="" disabled selected>Select State</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Gujrat">Gujrat</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Odisha">Odisha</option>
+
+            </tr>
+            <tr>
+                <td style="border: 2px solid black;">Upload Id Proof</td>
+                <td style="border: 2px solid black;"> <input type="file" placeholder="Upload file " required></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black;">License Type</td>
+                <td style="border: 2px solid black;" > 
+                    <input type="checkbox"  name="licensetype" value="Two wheeler" required>Two wheeler <br>
+                    <input type="checkbox"  name="licensetype" value="Four wheeler" >Four wheeler <br>
+                    <input type="checkbox"  name="licensetype" value="Heavy Vehicle" >Heavy Vehicle <br>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black;"> Create Password</td>
+                <td style="border: 2px solid black;"><input type="password" placeholder="Create Password" required></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black;">Terms and Conditions</td>
+                <td style="border: 2px solid black;"><input type="checkbox" required>I agree to the terms and conditions</td>
+            </tr>
+            <tr>
+                <th style="border: 2px solid black;" colspan="2"><input type="submit" value="Submit Application">
+                <input type="reset" value="Clear form"></th>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
